@@ -1,0 +1,41 @@
+again = "yes"
+
+while True:
+    try:
+        num1 = int(input("Enter a number: "))
+        num2 = int(input("Enter another number: "))
+
+   total = num1 + num2
+
+  if total > 0:
+  print("Positive")
+  elif total < 0:
+  print("Negative")
+  else:
+  print("Zero")
+
+  except ValueError:
+  print("Error: Please enter a number")
+
+  again = input("Do you want to enter more numbers? (Y/N): ")
+
+   if again == "n":
+        print("GOODBYE!")
+        break
+
+
+print("Starting the Password Strength Checker")
+again = "yes"
+while True:
+    password = (input("Enter a password: "))
+    if len(password) > 10:
+        print("Strong password")
+    elif len(password) >= 6:
+        print("Medium password")
+    else:
+        print("weak password")
+    again = input("Do you want to enter another password? (Y/N): ")
+    if again == "n":
+        print("Goodbye!")
+        break
+
